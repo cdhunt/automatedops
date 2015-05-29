@@ -12,7 +12,7 @@ theme = "redlounge"
 blog = "blog/:year/:month/:day/:slug/"
 	
 [[menu.main]]
-    name = "Blog"
+    name = "Posts"
     url = "/blog"	    
     
 [[menu.main]]

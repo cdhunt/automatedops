@@ -1,0 +1,21 @@
+---
+layout: post
+author: "Christopher Hunt"
+authortwitter: "https://twitter.com/logicaldiagram"
+category: ["Blog"]
+title: "One Year"
+date: 2014-02-25
+comments: true
+categories: [blog, devops, opinion]
+slug: "one-year"
+---
+![American Visitors](/img/geo.png)
+<span class="lead">I happened to look through all of the previous posts today and found that 2/25/2013 was my first.</span> So, that makes a year and by no conscious effort, 52 posts&mdash;one a week on average. The site receives about 500 visits a month from over 40 countries.<!--more--> The most popular post, by far, has been [get-storedcredentials-module](/blog/2013/06/07/get-storedcredentials-module/ "Get-StoredCredentials Module").
+
+I am still a fan of [Octopress](http://octopress.org "Octopress"). A fair amount of noise has been made about [Ghost](https://ghost.org/ "Ghost"), but it has actually been refreshing to have a site that just consists of static files. There is no server. It just works. And, it should work the same pretty much anywhere on any platform. Hosting the site as an Amazon S3 Web Site is extremely cost effective. The monthly cost to keep this site online is $1.15 with $1.01 of that being related to DNS which I should really just remove. I hosted a zone on Route 53 simply to bootstrap the [CloudFlare](https://www.cloudflare.com "CloudFlare") integration. {% img right /images/cloudflarereq.png CloudFlare Requests Saved %} CloudFlare is the active SOA for this domain and their basic services are free. So, in theory, for $0.14/month I have a site that could survive a [400Gbps DDoS](http://blog.cloudflare.com/technical-details-behind-a-400gbps-ntp-amplification-ddos-attack "Technical Details Behind a 400Gbps NTP Amplification DDoS Attack") attack.
+
+I've learned a fair bit about SEO and building page views. A link on Reddit generally produces a very significant, but short-lived spike in visits, while a link from another popular blog generates seemingly endless referrals. Twitter and Google+ generate very little traffic&mdash;at least with the small following I have on those networks. _Desired State Configuration_ and _Nginx as Forward Proxy_ are the most common search keywords leading to this site which is impressive since my [Nginx](/blog/2013/03/16/nginx-as-a-forward-proxy/ "Nginx as a Forward Proxy") post was posted eleven months ago.
+
+And that brings me full circle. This site really functions as a brain dump that hopefully people running into similar problems might find useful. This is by no means a popular blog, but hopefully it has saved some people time. It's helped me connect with peers and that has helped me solve more problems that I try to share here.
+
+I'll stop rambling now and go work on some useful content.
