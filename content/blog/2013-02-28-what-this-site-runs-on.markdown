@@ -6,7 +6,7 @@ category: ["Blog"]
 title: "What this site runs on"
 date: 2013-02-28
 comments: true
-tags: SaaS
+tags: [SaaS]
 slug: "what-this-site-runs-on"
 ---
 I've wanted to share some of my my experiences working in a Microsoft based SaaS environment and thought about blogging before, but I'm not really a writer. I finally started this site as an experiment to try technologies that I don't normally get to try in my day to day professional experience.

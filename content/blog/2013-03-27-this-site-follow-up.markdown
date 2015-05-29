@@ -6,7 +6,7 @@ category: ["Blog"]
 title: "This Site: Follow-Up"
 date: 2013-03-27
 comments: true
-tags: SaaS
+tags: [SaaS]
 slug: "this-site-follow-up"
 ---
 
