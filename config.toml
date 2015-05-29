@@ -1,0 +1,30 @@
+BaseURL = "http://www.automatedops.com"
+languageCode = "en-us"
+title = "Automated Ops"
+disqusShortname = "bloghunt"
+theme = "redlounge"
+
+[params]
+    sidebartitle = "Automated Ops"
+    sidebartagline = "Put down the GUI and step away from the Remote Desktop Connection"
+
+[permalinks]
+blog = "blog/:year/:month/:day/:slug/"
+	
+[[menu.main]]
+    name = "Blog"
+    url = "/blog"	    
+    
+[[menu.main]]
+    name = "Projects"
+    url = "/projects"	
+	
+[[menu.social]]
+    pre = "<i class='fa fa-twitter'></i>"
+    url = "http://www.twitter.com/logicaldiagram"
+    identifier = "twitter"
+
+[[menu.social]]
+    pre = "<i class='fa fa-github'></i>"
+    url = "http://www.twitter.com/logicaldiagram"
+    identifier = "github"	
