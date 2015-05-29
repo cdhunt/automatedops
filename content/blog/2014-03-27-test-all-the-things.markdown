@@ -6,7 +6,7 @@ category: ["Blog"]
 title: "Test All The Things"
 date: 2014-03-27
 comments: true
-categories: [Tools, PowerShell, Testing, Psate, WatiN, .Net]
+tags: [Tools, PowerShell, Testing, Psate, WatiN, .Net]
 slug: "test-all-the-things"
 ---
 This is a follow-up to my [last post](/blog/2014/03/21/test-it-with-psate/ "Test It With PSate") on using PSate for test automation. I demonstrated running `Invoke-WebRequest` and validating the StatusCode as a simple test for if a site is available. Now let's take it to the next level and run an artificial transaction. Again, PSate is a handy test runner to manage this and the open-source project, [WatiN](http://watin.org/ "Web Application Testing In .Net") *(pronounced as What-in)* is a great tool for automating a real browser.

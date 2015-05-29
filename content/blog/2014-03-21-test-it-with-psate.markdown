@@ -6,7 +6,7 @@ category: ["Blog"]
 title: "Test it with Psate"
 date: 2014-03-21
 comments: true
-categories: [Tools, PowerShell, Testing, Psate]
+tags: [Tools, PowerShell, Testing, Psate]
 slug: "test-it-with-psate"
 ---
 Recently I have been putting effort into learning the art and science of [unit testing](http://en.wikipedia.org/wiki/Unit_testing "Unit testing") using [Pester](https://github.com/pester/Pester "Pester") and [PSate](https://github.com/jonwagner/PSate "PSate"). I was going to write up something on my experiences, but Jakub Jareš beat me to it with [this](http://www.powershellmagazine.com/2014/03/12/get-started-with-pester-powershell-unit-testing-framework/ "Get started with Pester (PowerShell unit testing framework)") good article on PowerShell Magazine. If you are new to the idea of unit testing, go read that article and then come back here.

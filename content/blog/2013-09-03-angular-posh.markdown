@@ -6,7 +6,7 @@ category: ["Blog"]
 title: "Angular Posh"
 date: 2013-09-03
 comments: true
-categories: [PowerShell, AngularJS, Tools]
+tags: [PowerShell, AngularJS, Tools]
 slug: "angular-posh"
 ---
 I just recently found out about a fun project, [PoSH Server](http://www.poshserver.net/) that has actually been around quite a while. Executing PowerShell from a web page is a powerful idea for a Windows Administrator. Simply access a URL and get back some HTML formatted data&mdash;easy to run and consume the results. Just like everything involving PowerShell, there are a number of way to tackle this and I've tried quite a few including: PowerShellASP (now PowerShellServer) by [/n Software](http://www.nsoftware.com/powershell/); and [Edge](https://github.com/dfinke/edge-powershell) for NodeJS. The beauty of PoSH Server is that it's written entirely in PowerShell which makes it easy to run and tweak. You don't even need IIS installed. If you have PowerShell installed, install the module and run `Start-PoshServer`. That is all. Well, that's enough to get you started. Where you go from there is the challenging and fun part.

@@ -6,7 +6,7 @@ category: ["Blog"]
 title: "Software Deployments with psake on Windows"
 date: 2013-04-07
 comments: true
-categories: [Deployment, Automation, Powershell, Windows, Qopy, Tools]
+tags: [Deployment, Automation, Powershell, Windows, Qopy, Tools]
 slug: "software-deployments-with-psake-on-windows"
 ---
 I'm working on the finishing touches of a Deployment Automation script useing [psake](https://github.com/psake/psake) (pronounced like sake&#151;the Japanese rice wine) as the framework for creating discreet jobs and enforcing dependencies. 

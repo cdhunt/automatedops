@@ -6,7 +6,7 @@ category: ["Blog"]
 title: "Nginx As a Forward Proxy"
 date: 2013-03-16
 comments: true
-categories: [Tools, HTTP, Nginx]
+tags: [Tools, HTTP, Nginx]
 slug: "nginx-as-a-forward-proxy"
 ---
 Everyone wants to do SaaS these days and that includes Infrastructure Monitoring software. That's a problem when half of your servers do not have internet connectivity and you'd like it to stay that way.

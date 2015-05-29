@@ -6,7 +6,7 @@ category: ["Blog"]
 title: "Command line tools"
 date: 2013-07-11
 comments: true
-categories: [Tools, Windows, PowerShell]
+tags: [Tools, Windows, PowerShell]
 slug: "command-line-tools"
 ---
 ![](http://upload.wikimedia.org/wikipedia/en/7/7f/Windows_PowerShell_icon.png)

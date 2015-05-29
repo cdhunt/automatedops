@@ -6,7 +6,7 @@ category: ["Blog"]
 title: "Get-StoredCredentials Module"
 date: 2013-06-07
 comments: true
-categories: [Powershell, Security]
+tags: [Powershell, Security]
 slug: "get-storedcredentials-module"
 ---
 ![Password Vault'](/img/vault.png)
