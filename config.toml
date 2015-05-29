@@ -1,4 +1,4 @@
-BaseURL = "http://www.automatedops.com"
+BaseURL = "https://www.automatedops.com"
 languageCode = "en-us"
 title = "Automated Ops"
 disqusShortname = "bloghunt"
@@ -26,5 +26,5 @@ blog = "blog/:year/:month/:day/:slug/"
 
 [[menu.social]]
     pre = "<i class='fa fa-github'></i>"
-    url = "http://www.twitter.com/logicaldiagram"
+    url = "https://github.com/cdhunt/"
     identifier = "github"	
