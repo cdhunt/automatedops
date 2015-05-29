@@ -3,3 +3,6 @@ themes/
 
 # Ignore built site
 public/
+
+# Contains S3 keys
+publish.bat
