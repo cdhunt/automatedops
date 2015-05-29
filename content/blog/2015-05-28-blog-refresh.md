@@ -3,7 +3,7 @@ author = "Christopher Hunt"
 authortwitter = "https://twitter.com/logicaldiagram"
 category = ["Blog"]
 comments = true
-date = "2015-05-28T15:42:35-04:00"
+date = "2015-05-29T15:42:35-04:00"
 sharing = true
 tags = ["blog", "news"]
 title = "Blog Refresh"
@@ -22,4 +22,4 @@ I'm working to migrate the content so some links might not work at the time this
 
 The other benefit of this migration is I'm moving the source from my Dropbox account to [Github](https://github.com/cdhunt/automatedops). I've also started using [Code](https://code.visualstudio.com/) as my editor which handles working with the mixed content (markdown, html, css) extremely well and it has first-class support for Git built in. 
 
-The downside is, I haven't yet written that post about cross-domain remoting. 
+The downside is, I haven't yet written that post about cross-domain remoting. That's next. After I shave this yak.
