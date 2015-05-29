@@ -13,7 +13,7 @@ slug: "tools-nssm"
 
 NSSM is a really simple application for creating a Windows service from any executable command. 
 
-![](http://nssm.cc/images/install.gif)
+![](http://nssm.cc/images/install_application.png)
 
 It's similar to _srvany_ if you've ever used that before. NSSM includes support for handling application exits depending on the exit code. That's about it. There's not much to it, but it is quick and simple way to solve a not-uncommon problem&madsh;make something run without requiring me to log in and start it.
 <!--more-->
