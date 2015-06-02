@@ -28,3 +28,8 @@ blog = "blog/:year/:month/:day/:slug/"
     pre = "<i class='fa fa-github'></i>"
     url = "https://github.com/cdhunt/"
     identifier = "github"	
+    
+[[menu.social]]
+    pre = "<i class='fa fa-rss'></i>"
+    url = "/index.xml"
+    identifier = "rss"	    
