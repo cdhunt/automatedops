@@ -10,15 +10,19 @@ theme = "redlounge"
 
 [permalinks]
 blog = "blog/:year/:month/:day/:slug/"
-	
+
 [[menu.main]]
     name = "Posts"
-    url = "/blog"	    
-    
+    url = "/blog"
+
 [[menu.main]]
     name = "Projects"
-    url = "/projects"	
-	
+    url = "/projects"
+
+[[menu.main]]
+    name = "Reading List"
+    url = "/reading_list"
+
 [[menu.social]]
     pre = "<i class='fa fa-twitter'></i>"
     url = "http://www.twitter.com/logicaldiagram"
@@ -27,9 +31,9 @@ blog = "blog/:year/:month/:day/:slug/"
 [[menu.social]]
     pre = "<i class='fa fa-github'></i>"
     url = "https://github.com/cdhunt/"
-    identifier = "github"	
-    
+    identifier = "github"
+
 [[menu.social]]
     pre = "<i class='fa fa-rss'></i>"
     url = "/index.xml"
-    identifier = "rss"	    
+    identifier = "rss"
