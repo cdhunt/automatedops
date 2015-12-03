@@ -9,12 +9,12 @@ socialsharing: true
 This is a list of books I have read over the years and found interesting and influential in understanding Operations, Business, and most importantly, People. Most of these books are not about Technical Operations or Computer Science, but about understanding complex systems, including how we think.
 
 ## System Thinking
-* **[Thinking in Systems: A Primer](http://amzn.com/1603580557)** by Donella H. Meadows
-* **[The Checklist Manifesto: How to Get Things Right](http://amzn.com/0312430000)** by Atul Gawande 
+* **[Thinking in Systems: A Primer](http://amzn.com/1603580557)** by Donella H. Meadows 
+* **[The Checklist Manifesto: How to Get Things Right](http://amzn.com/0312430000)** by Atul Gawande *[(my review)](/blog/2014/02/24/book-review-the-checklist-manifesto/)*
 
 ## Human Thought and Bias
 * **[On Intelligence](http://amzn.com/0805078533)** by Jeff Hawkins
-* **[Thinking, Fast and Slow](http://amzn.com/0374533555)** by Daniel Kahneman 
+* **[Thinking, Fast and Slow](http://amzn.com/0374533555)** by Daniel Kahneman *[(my review)](/blog/2014/04/08/book-review-thinking-fast-and-slow/)*
 * **[Quiet: The Power of Introverts in a World That Can't Stop Talking](http://amzn.com/0307352153)** by Susan Cain 
 
 ## Business Organization
