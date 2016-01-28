@@ -2,7 +2,7 @@ BaseURL = "https://www.automatedops.com"
 languageCode = "en-us"
 title = "Automated Ops"
 disqusShortname = "bloghunt"
-theme = "redlounge"
+theme = "hugo-redlounge"
 
 [params]
     sidebartitle = "Automated Ops"
