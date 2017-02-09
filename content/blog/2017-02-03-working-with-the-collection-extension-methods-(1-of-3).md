@@ -18,7 +18,7 @@ This is the first in a series of posts about `[System.Collections.Generic.List]`
 First things first, Generic Lists are statically typed.
 
 
-```powershell
+```
 PS C:\Temp> $list = New-Object System.Collections.Generic.List[int]
 
 PS C:\Temp> $list.add(1)
@@ -40,7 +40,7 @@ That just doesn't work. You can cheat though and create a `System.Collections.Ge
 Let's create a real list to mess around with for future examples.
 
 
-```powershell
+```
 $list = New-Object System.Collections.Generic.List[string]
 
 $list.Add("Mike")
@@ -51,7 +51,7 @@ $list.Add("Michele")
 
 On the surface, it looks just like an array.
 
-```powershell
+```
 posh> $list
 Mike
 Bob
@@ -61,7 +61,7 @@ Michele
 
 But, take a look at the methods available for a Generic.List.
 
-```powershell
+```
 $list.GetType().GetMethods() | select Name -Unique
 
 Name
@@ -108,11 +108,11 @@ GetType
 ```
 
 You have to use `GetType().GetMethods` in this case because PowerShell attempts to be helpful when you pipe to Get-Member and returns the members for the underlying type, `string`.
-There is some interesting looking methods in there.
+There are some interesting looking methods in there.
 
 We're going to explore the functionality of a few of these in this series. Now, here is the first gotcha.
 
-```powershell
+```
 posh> $list.FindAll
 
 OverloadDefinitions
@@ -124,4 +124,4 @@ System.Collections.Generic.List[string] FindAll(System.Predicate[string] match)
 
 ## Next
 
-In part 2, we'll find out what a Predicate is and how to make one in PowerShell.
+In [part 2](/blog/2017/02/06/working-with-the-collection-extension-methods-2-of-3/), we'll find out what a Predicate is and how to make one in PowerShell.
