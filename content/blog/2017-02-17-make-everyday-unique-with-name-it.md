@@ -43,6 +43,8 @@ Here is what it looks like.
 
 ![GoodDay StupidCoat](/img/gooddaystupidcoat.png)
 
+The code for my Prompt function is up on [GitHub](https://github.com/cdhunt/Profile/blob/master/ScriptsToProcess/Prompt.ps1).
+
 # Works for other names as well
 
 This works really well for naming things when you don't really care what the name is, but want it easy to read and say.
