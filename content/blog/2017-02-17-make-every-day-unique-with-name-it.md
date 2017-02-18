@@ -6,8 +6,8 @@ comments: true
 date: "2017-02-17T10:10:18-05:00"
 sharing: true
 tags: ["powershell", "project", "random"]
-title: "Make everyday unique with NameIt"
-slug: "make-everyday-unique-with-name-it"
+title: "Make every day unique with NameIt"
+slug: "make-every-day-unique-with-name-it"
 draft: false
 ---
 
