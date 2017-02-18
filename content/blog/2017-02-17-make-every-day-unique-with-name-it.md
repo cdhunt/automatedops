@@ -15,6 +15,7 @@ draft: false
 
 This is half of a tandem blog posting about [NameIt](https://github.com/dfinke/NameIT).
 You can catch the other half over at [Doug Finke's Blog](https://dfinke.github.io/#blog).
+If you've landed here first, take a few minutes to go read Doug's post and get the full background on the history of this project.
 Doug started [NameIt](https://github.com/dfinke/NameIT) as a simple module to generate random strings based on a template, like `???##`, which would give you three random characters and two digits.
 Over the course of over a year and 60+ commits later, the module had grown to a fairly robust random data generator.
 
