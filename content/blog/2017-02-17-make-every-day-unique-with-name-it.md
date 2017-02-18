@@ -48,7 +48,8 @@ The code for my Prompt function is up on [GitHub](https://github.com/cdhunt/Prof
 
 # Works for other names as well
 
-This works really well for naming things when you don't really care what the name is, but want it easy to read and say.
+This works really well for naming things when you don't really care what the name is, like disposble servers, but want it easy to read and say.
+Or you just want to add a little bit of randomness to your day.
 
 Just be careful, sometimes the names can strike a nerve.
 I'm looking at you HopelessProject.
