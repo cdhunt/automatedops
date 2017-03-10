@@ -61,6 +61,8 @@ Only two lines if you want the bare bones experience.
 However, the whole point of Hyper is that it is extensible.
 After trying out a bunch, here is what I settled on for day to day use.
 
+_**Update - March 10th**:_ It appears that the 1.3.0 release that came out as I was rigthing this has some [serious issues](https://github.com/zeit/hyper/issues/1221) with CPU consumption on Windows.
+
 ## Extensions
 
 ### hyperpower
