@@ -13,25 +13,25 @@ draft: true
 
 ## Background
 
-Doug Finke and I have collaborating for the past few years in different capacities. We both started working on a Powershell implementation of the Humanizer library for .Net an ultimately merged our ideas into [PowerShellHumanizer](https://github.com/dfinke/powershellhumanizer). It didn't stop there.
+Doug Finke and I have been collaborating for the past few years in different capacities. We both started working on a Powershell implementation of the Humanizer library for .Net an ultimately merged our ideas into [PowerShellHumanizer](https://github.com/dfinke/powershellhumanizer). It didn't stop there.
 
 We interact regularly, sharing ideas, both good and bad (on both sides), giving and receiving feedback on approaches, code and more.
 
 Recently we chatted about what it takes to go from PowerShell scripter to PowerShell open source developer. More on that in later blog posts.
 
-As part of that, Doug brought up Design Patterns and started sharing scripts on implementing the in PowerShell using classes. I've been exploring how these patterns work in the Powershell world. The first one I really got my head around was **Strategy**.
+As part of that, Doug brought up Design Patterns and started sharing scripts on implementing the patterns in PowerShell using classes. I've been exploring how these patterns work in the Powershell world. The first one I really got my head around was **Strategy**.
 
 ## The Strategy Pattern
 
 The [Strategy](https://en.wikipedia.org/wiki/Strategy_pattern) pattern is a behavioral software design pattern. That is, it's a pattern you can use to select an algorithm at runtime based on the context.
 
-For example, say you are writing a script to process log files and you have a few different log formats. The script does the same thing for each format at a high level, but the details of how to make sense of each format is a little different. You could write a big If/ElseIf block or a Switch statement, but you can take it just a bit further and employ the Stragegy pattern to make it more flexible and reusable.
+For example, say you are writing a script to process log files and you have a few different log formats. The script does the same thing for each format at a high level, but the details of how to make sense of each format is a little different. You could write a big If/ElseIf block or a Switch statement, but you can take it just a bit further and employ the Strategy pattern to make it more flexible and reusable.
 
 ## My Example: The Build Script
 
 ### Motivation
 
-I want to run a number of build stages to prepays a PowerShell module for publication. To start, I'll have define three possible stages, "Clean", "Copy" and "Test".
+I want to run a number of build stages to prepays a PowerShell module for publication. To start, I'll have defined three possible stages, "Clean", "Copy" and "Test".
 
 ```powershell
 [Job]::New($Path, $Output).
@@ -42,7 +42,7 @@ I want to run a number of build stages to prepays a PowerShell module for public
     GetResult()
 ```
 
-I have a `Job` class that is responsible for executing a Build. Instead of defining all of the stages as methods of `Job` I've created a `Stage` abstract class and implemented various subclasses to implement the different stage _strategies_. The `Job` object is also where I set and store the context for the program. I don't need to pass `$Path` and `$Output` to every stage, they can access the parameters from the `Job`. Therefor, each _Stage_ is self contained. You don't need to know how they work and what values to supply for each.
+I have a `Job` class that is responsible for executing a Build. Instead of defining all of the stages as methods of `Job` I've created a `Stage` abstract class and implemented various subclasses to implement the different stage _strategies_. The `Job` object is also where I set and store the context for the program. I don't need to pass `$Path` and `$Output` to every stage, they can access the parameters from the `Job`. Therefore, each _Stage_ is self-contained. You don't need to know how they work and what values to supply for each.
 
 Here's what the `Stage` abstract class looks like.
 
@@ -61,12 +61,12 @@ class Stage {
 
     [string] GetHeader() {
         return "~ [{0}] ~" -f $this.Name
-    }
+}
 ```
 
 Powershell Classes don't have support for .Net Abstract classes so this is really just a base class that implements some common logic.
 
-Here's the the definition of the `Copy` subclass.
+Here's the definition of the `Copy` subclass.
 
 ```powershell
 class Copy : Stage {
@@ -79,7 +79,9 @@ class Copy : Stage {
 
         Get-ChildItem -Path $J.Source | ForEach-Object {
             $_ | Copy-Item -Destination $J.Destination -ErrorAction Stop -Recurse
-            $J.LogEntry("+ {0}" -f (Resolve-Path (Join-Path -Path $J.Destination -ChildPath $_.Name) ))
+            $J.LogEntry("+ {0}" -f (
+                Resolve-Path (Join-Path -Path $J.Destination -ChildPath $_.Name)
+            ) )
         }
 
         $J.LogEntry("[in {0:N2}s]" -f $this.GetElapsed().TotalSeconds)
@@ -202,4 +204,4 @@ This is just a foundation. Once the pieces are in place, you can build on top of
 - Create Cmdlets - `New-BuildJob`, `Add-BuildStage` and `Invoke-BuildJob` to build a Powershell Pipeline
 - Design a DSL to simplify your Job definition
 
-The Job logic, Stage definitions and Interface all all separate and can be refactored with minimal impact on the other parts. That makes it safer to make changes and incrementally add value over time and that's a key difference between a single use script and software design.
+The Job logic, Stage definitions, and Interface are all separate and can be refactored with minimal impact on the other parts. That makes it safer to make changes and incrementally add value over time and that's a key difference between a single-use script and software design.
