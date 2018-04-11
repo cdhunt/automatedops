@@ -6,3 +6,5 @@ public/
 
 # Contains S3 keys
 publish.bat
+
+**/_ignore_*
