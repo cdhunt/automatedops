@@ -2,11 +2,19 @@ BaseURL = "https://www.automatedops.com"
 languageCode = "en-us"
 title = "Automated Ops"
 disqusShortname = "bloghunt"
-theme = "hugo-redlounge"
+theme = "minimal"
+
 
 [params]
     sidebartitle = "Automated Ops"
-    sidebartagline = "Put down the GUI and step away from the Remote Desktop Connection"
+    description = "Put down the GUI and step away from the Remote Desktop Connection"
+    highlight = true
+    highlightStyle = "atom-one-light"
+    highlightLanguages = ["go", "powershell"]
+    accent = "#E54028"
+    showBorder = true
+    backgroundColor = "white"
+    socialsharing = true
 
 [permalinks]
 blog = "blog/:year/:month/:day/:slug/"
@@ -14,26 +22,34 @@ blog = "blog/:year/:month/:day/:slug/"
 [[menu.main]]
     name = "Posts"
     url = "/blog"
+    weight = 1
 
 [[menu.main]]
     name = "Projects"
     url = "/projects"
+    weight = 2
 
 [[menu.main]]
     name = "Reading List"
     url = "/reading_list"
+    weight = 3
 
-[[menu.social]]
-    pre = "<i class='fa fa-twitter'></i>"
-    url = "http://www.twitter.com/logicaldiagram"
-    identifier = "twitter"
-
-[[menu.social]]
-    pre = "<i class='fa fa-github'></i>"
+[[menu.icon]]
     url = "https://github.com/cdhunt/"
-    identifier = "github"
+    name = "github"
+    weight = 1
 
-[[menu.social]]
-    pre = "<i class='fa fa-rss'></i>"
-    url = "/index.xml"
-    identifier = "rss"
+[[menu.icon]]
+    url = "https://twitter.com/logicaldiagram/"
+    name = "twitter"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://stackoverflow.com/users/1050536/logicaldiagram"
+    name = "stack-overflow"
+    weight = 3
+
+[[menu.icon]]
+    url = "/blog/index.xml"
+    name = "rss"
+    weight = 4
