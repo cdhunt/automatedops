@@ -8,7 +8,6 @@ sharing: true
 tags: ["powershell", "design patterns", "composable magic"]
 title: "Software Design Patterns in Powershell: Strategy Pattern"
 slug: "software-design-patterns-in-powershell-strategy-pattern"
-draft: true
 ---
 
 ## Background
