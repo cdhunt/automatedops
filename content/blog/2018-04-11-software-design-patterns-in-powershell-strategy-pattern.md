@@ -14,8 +14,6 @@ slug: "software-design-patterns-in-powershell-strategy-pattern"
 
 Doug Finke and I have been collaborating for the past few years in different capacities. We both started working on a Powershell implementation of the Humanizer library for .Net an ultimately merged our ideas into [PowerShellHumanizer](https://github.com/dfinke/powershellhumanizer). It didn't stop there.
 
-We interact regularly, sharing ideas, both good and bad (on both sides), giving and receiving feedback on approaches, code and more.
-
 Recently we chatted about what it takes to go from PowerShell scripter to PowerShell open source developer. More on that in later blog posts.
 
 As part of that, Doug brought up Design Patterns and started sharing scripts on implementing the patterns in PowerShell using classes. I've been exploring how these patterns work in the Powershell world. The first one I really got my head around was **Strategy**.
@@ -197,10 +195,13 @@ If you're curious, here's what the script output looks like.
             Test [.\release]
             [in 0.29s]
 
-
 This is just a foundation. Once the pieces are in place, you can build on top of it.
 
 - Create Cmdlets - `New-BuildJob`, `Add-BuildStage` and `Invoke-BuildJob` to build a Powershell Pipeline
 - Design a DSL to simplify your Job definition
 
 The Job logic, Stage definitions, and Interface are all separate and can be refactored with minimal impact on the other parts. That makes it safer to make changes and incrementally add value over time and that's a key difference between a single-use script and software design.
+
+## Keep Reading
+
+If this kind of thing is interesting to you, Doug has a [companion article](https://dfinke.github.io/powershell,%20design%20patterns/2018/04/13/PowerShell-And-Design-Patterns.html) on his blog about the `Adapter Pattern`. Guess what, you've been a benefit of this pattern probably since the first time you used PowerShell. When you get to know these patterns in software development, not only does it make writing software easier, but it helps us in communicating software design ideas to our fellow developers.
